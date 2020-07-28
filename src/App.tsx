@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import QuestionCard from './Components/QuestionCard';
 import {fetchQuestions, Difficulty, QuestionState} from './Api'
+import { GlobalStyle, Wrapper } from './App.styles';
 
 export type AnswerObject = {
   question: string;
@@ -64,7 +65,9 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
+      <GlobalStyle />
+      <Wrapper>
       <h1>React Quiz</h1>
       {gameOver || userAnswer.length === Total_Questions ? (<button className="start" onClick={startTrivia}>Start</button>) : null}
       {!gameOver ? <p className="score">Score: {score}</p>: null}
@@ -80,7 +83,8 @@ function App() {
       />)}
       {!gameOver && !loading && userAnswer.length === number+1 && number !== Total_Questions -1 ?
         <button className="next" onClick={nextQuestion}>Next Question</button> : null }
-    </div>
+    </Wrapper>
+    </>
   );
 }
 
