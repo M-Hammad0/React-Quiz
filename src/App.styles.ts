@@ -28,12 +28,12 @@ export const Wrapper = styled.div`
   }
   .score {
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
   }
   h1 {
     font-family: Fascinate Inline;
-    background-image: linear-gradient(180deg, #fff, #87f1ff);
+    background-image: linear-gradient(180deg, #fff,#fff);
     font-weight: 400;
     background-size: 100%;
     background-clip: text;
@@ -41,7 +41,7 @@ export const Wrapper = styled.div`
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px #0085a3);
+    filter: drop-shadow(2px 2px #411f1f);
     font-size: 70px;
     text-align: center;
     margin: 20px;
