@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 
-// var diff = "easy";
 
 function App() {
   const classes = useStyles();
