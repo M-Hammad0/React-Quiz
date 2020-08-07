@@ -28,4 +28,4 @@ jobs:
       run: npm install -g surge
       
     - name: Run surge
-      run: surge ./build react-quiz-mh.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build https://react-quiz-mh.surge.sh --token ${{secrets.SURGE_TOKEN}}
